@@ -1,6 +1,14 @@
 import { Link } from "react-router-dom";
 import { FaCheck } from 'react-icons/fa'
 
+import doctorImg from "../assets/images/doctor.jpg";
+import kidney from "../assets/icons/kidney.png";
+import prostate from "../assets/icons/prostate.png";
+import sperm from "../assets/icons/sperm.png";
+import scalpel from "../assets/icons/scalpel.png";
+import bacteria from "../assets/icons/bacteria.png";
+import tool from "../assets/icons/tool.png";
+
 import Footer from '../components/footer';
 import Header from '../components/navbar';
 import CallButton from '../components/callButton';
@@ -67,7 +75,7 @@ export default function Home() {
           {/* Imagen */}
           <div className="flex-shrink-0 shadow-xl rounded-2xl overflow-hidden max-w-sm w-full">
             <img
-              src="https://assets.zyrosite.com/YKb3okXQjWh9R4GV/dr-YZ98nq8LZvF2N45B.jpg"
+              src={doctorImg}
               alt="Dr. Adrián Fernández"
               className="object-cover w-full h-full"
             />
@@ -108,32 +116,32 @@ export default function Home() {
       {
         title: 'Cálculos renales',
         description: 'Tratamiento y prevención de piedras en riñones y vías urinarias.',
-        image: 'https://assets.zyrosite.com/YKb3okXQjWh9R4GV/kidney-YbNByaQX60Tn7gQk.png',
+        image: kidney,
       },
       {
         title: 'Próstata',
         description: 'Control de crecimiento prostático, prostatitis y seguimiento médico.',
-        image: 'https://assets.zyrosite.com/YKb3okXQjWh9R4GV/prostate-Yyv92oj5eMtyzMOn.png',
+        image: prostate,
       },
       {
         title: 'Andrología',
         description: 'Disfunción eréctil, salud sexual masculina e infertilidad.',
-        image: 'https://assets.zyrosite.com/YKb3okXQjWh9R4GV/sperm-Yan1zBXZG1fzByKO.png',
+        image: sperm,
       },
       {
         title: 'Vasectomía',
         description: 'Procedimiento quirúrgico ambulatorio y seguro para planificación familiar.',
-        image: 'https://assets.zyrosite.com/YKb3okXQjWh9R4GV/scalpel-YNqBNJ1orbSpR7yx.png',
+        image: scalpel,
       },
       {
         title: 'Infecciones urinarias',
         description: 'Diagnóstico, tratamiento y seguimiento en mujeres y hombres.',
-        image: 'https://assets.zyrosite.com/YKb3okXQjWh9R4GV/bacteria-m5KMrvqDOGFLEGMZ.png',
+        image: bacteria,
       },
       {
         title: 'Cirugía endoscópica',
         description: 'Procedimientos de mínima invasión con tecnología láser y endoscopía.',
-        image: 'https://assets.zyrosite.com/YKb3okXQjWh9R4GV/endoscopy-mP4OpRBkZMtV3DWe.png',
+        image: tool,
       },
     ];
 

@@ -1,6 +1,7 @@
 import Footer from "../components/footer";
 import Header from "../components/navbar";
 import CallButton from "../components/callButton";
+import imgDoctor from "../assets/images/doctor2.png";
 
 export default function AboutUs() {
     function renderCredentialsSection() {
@@ -44,7 +45,7 @@ export default function AboutUs() {
                     {/* Columna de imagen */}
                     <div className="flex-1 max-w-sm mx-auto md:mx-0">
                         <img
-                            src="https://assets.zyrosite.com/YKb3okXQjWh9R4GV/dr1-Y4LDpVWenkTj9EQ5.jpg"
+                            src={imgDoctor}
                             alt="Dr. Adrián Fernández"
                             className="w-full rounded-2xl shadow-xl object-cover"
                         />

@@ -1,6 +1,7 @@
 import Footer from "../components/footer";
 import Header from "../components/navbar";
 import CallButton from "../components/callButton";
+import imgDoctor from "../assets/images/doctor1.png";
 
 export default function Specialties() {
     function renderHeroUrologySection() {
@@ -30,7 +31,7 @@ export default function Specialties() {
                     {/* Imagen */}
                     <div className="flex-1 max-w-sm mx-auto">
                         <img
-                            src="https://assets.zyrosite.com/YKb3okXQjWh9R4GV/dr2-ALpebPrDnZIbx8br.jpg"
+                            src={imgDoctor}
                             alt="Dr. Adrián Fernández Arzate"
                             className="w-full rounded-2xl shadow-xl object-cover"
                         />
