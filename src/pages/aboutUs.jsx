@@ -18,10 +18,15 @@ export default function AboutUs() {
         ];
 
         return (
-            <section className="bg-[#f4f7fa] text-[#0D47A1] py-20 px-4 mt-32 font-sans">
-                {/* Título centrado arriba */}
+            <section className="bg-[#f4f7fa] text-[#0D47A1] py-20 px-4 mt-32 font-sans" aria-labelledby="sobre-titulo">
+                {/* Título principal de página */}
+                <div className="max-w-6xl mx-auto text-center mb-6">
+                    <h1 id="sobre-titulo" className="text-3xl sm:text-4xl font-bold text-[#0D47A1]">
+                        Sobre el Dr. Adrián Fernández
+                    </h1>
+                </div>
                 <div className="max-w-6xl mx-auto text-center mb-12">
-                    <h2 className="text-3xl sm:text-4xl font-bold relative inline-block after:content-[''] after:block after:w-full after:h-1 after:bg-[#4FC3F7] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">
+                    <h2 className="text-2xl sm:text-3xl font-bold relative inline-block after:content-[''] after:block after:w-full after:h-1 after:bg-[#4FC3F7] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">
                         Formación y Experiencia
                     </h2>
                 </div>
@@ -141,6 +146,11 @@ export default function AboutUs() {
                 <meta property="og:description" content="Experto en urología y cirugía mínimamente invasiva. Conoce su formación y experiencia médica." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://urologoadrianfernandez.com/sobre-mi" />
+                <meta property="og:image" content="https://urologoadrianfernandez.com/og-image.jpg" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Sobre el Dr. Adrián Fernández | Urólogo en Guadalajara" />
+                <meta name="twitter:description" content="Experto en urología y cirugía mínimamente invasiva." />
+                <meta name="twitter:image" content="https://urologoadrianfernandez.com/og-image.jpg" />
                 <link rel="canonical" href="https://urologoadrianfernandez.com/sobre-mi" />
             </Helmet>
             <Header />

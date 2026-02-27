@@ -162,6 +162,11 @@ export default function Contact() {
                 <meta property="og:description" content="Agenda tu consulta con el Dr. Adrián Fernández. Atención profesional en Guadalajara y Atotonilco el Alto." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://urologoadrianfernandez.com/contacto" />
+                <meta property="og:image" content="https://urologoadrianfernandez.com/og-image.jpg" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Contacto | Dr. Adrián Fernández - Urólogo en Guadalajara" />
+                <meta name="twitter:description" content="Agenda tu consulta. Guadalajara y Atotonilco el Alto." />
+                <meta name="twitter:image" content="https://urologoadrianfernandez.com/og-image.jpg" />
                 <link rel="canonical" href="https://urologoadrianfernandez.com/contacto" />
             </Helmet>
             <Header />

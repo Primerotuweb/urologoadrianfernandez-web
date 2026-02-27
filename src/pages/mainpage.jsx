@@ -403,6 +403,13 @@ export default function Home() {
         <meta property="og:description" content="Especialista en salud masculina y urología avanzada. Atención en Guadalajara con ética y profesionalismo." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://urologoadrianfernandez.com/" />
+        <meta property="og:image" content="https://urologoadrianfernandez.com/og-image.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Urólogo en Guadalajara | Dr. Adrián Fernández" />
+        <meta name="twitter:description" content="Especialista en salud masculina y urología avanzada. Atención en Guadalajara." />
+        <meta name="twitter:image" content="https://urologoadrianfernandez.com/og-image.jpg" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://urologoadrianfernandez.com/" />
       </Helmet>

@@ -186,6 +186,11 @@ export default function Specialties() {
                 <meta property="og:description" content="Experticia en cirugía urológica avanzada. Conoce las especialidades del Dr. Adrián Fernández." />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://urologoadrianfernandez.com/especialidades" />
+                <meta property="og:image" content="https://urologoadrianfernandez.com/og-image.jpg" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Especialidades Urológicas | Dr. Adrián Fernández" />
+                <meta name="twitter:description" content="Experticia en cirugía urológica avanzada." />
+                <meta name="twitter:image" content="https://urologoadrianfernandez.com/og-image.jpg" />
                 <link rel="canonical" href="https://urologoadrianfernandez.com/especialidades" />
             </Helmet>
             <Header />

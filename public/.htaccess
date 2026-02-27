@@ -1,0 +1,15 @@
+# Cabeceras de seguridad (Trust & Security)
+<IfModule mod_headers.c>
+  Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# Servir archivos estáticos (robots.txt, sitemap.xml, og-image) y solo reescribir el resto al SPA
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
