@@ -3,10 +3,13 @@ import Header from "../components/navbar";
 import CallButton from "../components/callButton";
 import imgDoctor from "../assets/images/doctor1.png";
 
+import { Helmet } from 'react-helmet';
+
+
 export default function Specialties() {
     function renderHeroUrologySection() {
         return (
-            <section className="bg-[#f4f7fa] text-[#0D47A1] py-24 px-4 font-sans">
+            <section className="bg-[#f4f7fa] text-[#0D47A1] py-24 px-4 mt-32 font-sans">
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10 animate-fade-in">
                     {/* Texto */}
                     <div className="flex-1 min-w-[300px]">
@@ -167,6 +170,24 @@ export default function Specialties() {
 
     return (
         <main className="text-gray-800 bg-white min-h-screen">
+            <Helmet>
+                <title>Especialidades Urológicas | Cirugía Láser y Tratamientos Avanzados - Dr. Adrián Fernández</title>
+                <meta
+                    name="description"
+                    content="Conoce las especialidades del Dr. Adrián Fernández: cirugía láser HoLEP, laparoscopía urológica, andrología y más. Atención profesional en Guadalajara."
+                />
+                <meta
+                    name="keywords"
+                    content="cirugía prostática, urólogo en Guadalajara, HoLEP, cirugía laparoscópica, andrología, ECIRS, especialista en urología, salud urinaria, cirugía de riñón"
+                />
+                <meta name="author" content="Dr. Adrián Fernández" />
+                <meta name="robots" content="index, follow" />
+                <meta property="og:title" content="Especialidades Urológicas | Dr. Adrián Fernández" />
+                <meta property="og:description" content="Experticia en cirugía urológica avanzada. Conoce las especialidades del Dr. Adrián Fernández." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://urologoadrianfernandez.com/especialidades" />
+                <link rel="canonical" href="https://urologoadrianfernandez.com/especialidades" />
+            </Helmet>
             <Header />
             {renderHeroUrologySection()}
             {renderSpecialtyAreasSection()}

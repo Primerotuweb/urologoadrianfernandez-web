@@ -13,11 +13,15 @@ import Footer from '../components/footer';
 import Header from '../components/navbar';
 import CallButton from '../components/callButton';
 
+import { Helmet } from 'react-helmet';
+
 
 export default function Home() {
+
+
   function renderHeroSection() {
     return (
-      <section className="relative text-white text-center py-48 px-5 overflow-hidden bg-gradient-to-r from-[#0d47a1] to-[#4fc3f7]">
+      <section className="relative text-white text-center py-48 px-5 mt-32 overflow-hidden bg-gradient-to-r from-[#0d47a1] to-[#4fc3f7]">
         <div className="max-w-3xl mx-auto animate-fade-in">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Dr. Adrián Fernández Arzate
@@ -82,7 +86,7 @@ export default function Home() {
           </div>
 
           {/* Texto */}
-          <div className="flex-1 min-w-[300px]">
+          <div className="flex-1 min-w-[300px] text-center md:text-left flex flex-col items-center md:items-start">
             <h2 className="text-3xl sm:text-4xl font-bold text-[#0D47A1] mb-6 relative inline-block after:content-[''] after:block after:w-full after:h-1 after:bg-[#4FC3F7] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">
               Sobre mí
             </h2>
@@ -237,15 +241,15 @@ export default function Home() {
           Brindo atención médica profesional y personalizada para hombres, mujeres y niños. Estos son algunos de los principales motivos de consulta:
         </p>
 
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 text-left max-w-6xl mx-auto">
+        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 text-center md:text-left items-center md:items-start max-w-6xl mx-auto">
           {consultTopics.map((group, index) => (
-            <div key={index} className="animate-fade-in">
+            <div key={index} className="flex flex-col items-center md:items-start animate-fade-in">
               <h3 className="text-[#4FC3F7] text-lg font-semibold mb-3">
                 {group.title}
               </h3>
               <ul className="space-y-2 text-gray-700">
                 {group.items.map((item, idx) => (
-                  <li key={idx} className="flex items-start gap-2">
+                  <li key={idx} className="flex justify-center items-center gap-2 text-center md:justify-start md:text-left">
                     <FaCheck className="text-green-500 text-lg mt-1" />
                     <span>{item}</span>
                   </li>
@@ -254,7 +258,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </section >
     );
   }
 
@@ -387,6 +391,21 @@ export default function Home() {
 
   return (
     <div className="text-gray-800 bg-white min-h-screen">
+      <Helmet>
+        <title>Urólogo en Guadalajara | Dr. Adrián Fernández</title>
+        <meta
+          name="description"
+          content="Atención profesional en urología en Guadalajara. Cirugía prostática, vasectomía, infecciones urinarias y más. Agenda tu cita con el Dr. Adrián Fernández."
+        />
+        <meta name="keywords" content="urólogo en Guadalajara, cirugía prostática, vasectomía, salud urinaria, Dr. Adrián Fernández" />
+        <meta name="author" content="Dr. Adrián Fernández" />
+        <meta property="og:title" content="Urólogo en Guadalajara | Dr. Adrián Fernández" />
+        <meta property="og:description" content="Especialista en salud masculina y urología avanzada. Atención en Guadalajara con ética y profesionalismo." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://urologoadrianfernandez.com/" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://urologoadrianfernandez.com/" />
+      </Helmet>
       <Header />
       {renderHeroSection()}
       {renderAboutSection()}

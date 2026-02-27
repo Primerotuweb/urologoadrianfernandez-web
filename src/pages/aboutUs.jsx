@@ -3,6 +3,9 @@ import Header from "../components/navbar";
 import CallButton from "../components/callButton";
 import imgDoctor from "../assets/images/doctor2.png";
 
+import { Helmet } from 'react-helmet';
+
+
 export default function AboutUs() {
     function renderCredentialsSection() {
         const credentials = [
@@ -15,7 +18,7 @@ export default function AboutUs() {
         ];
 
         return (
-            <section className="bg-[#f4f7fa] text-[#0D47A1] py-20 px-4 font-sans">
+            <section className="bg-[#f4f7fa] text-[#0D47A1] py-20 px-4 mt-32 font-sans">
                 {/* Título centrado arriba */}
                 <div className="max-w-6xl mx-auto text-center mb-12">
                     <h2 className="text-3xl sm:text-4xl font-bold relative inline-block after:content-[''] after:block after:w-full after:h-1 after:bg-[#4FC3F7] after:scale-x-0 hover:after:scale-x-100 after:transition-transform after:origin-left">
@@ -122,6 +125,24 @@ export default function AboutUs() {
 
     return (
         <main className="text-gray-800 bg-white min-h-screen">
+            <Helmet>
+                <title>Sobre el Dr. Adrián Fernández | Urólogo Certificado en Guadalajara</title>
+                <meta
+                    name="description"
+                    content="Conoce al Dr. Adrián Fernández, urólogo certificado con experiencia en cirugía láser HoLEP, laparoscopía y salud urinaria. Atención ética y profesional en Guadalajara."
+                />
+                <meta
+                    name="keywords"
+                    content="Dr. Adrián Fernández, urólogo en Guadalajara, especialista en urología, cirugía láser, cirugía laparoscópica, cédula profesional 13178380"
+                />
+                <meta name="author" content="Dr. Adrián Fernández" />
+                <meta name="robots" content="index, follow" />
+                <meta property="og:title" content="Sobre el Dr. Adrián Fernández | Urólogo en Guadalajara" />
+                <meta property="og:description" content="Experto en urología y cirugía mínimamente invasiva. Conoce su formación y experiencia médica." />
+                <meta property="og:type" content="website" />
+                <meta property="og:url" content="https://urologoadrianfernandez.com/sobre-mi" />
+                <link rel="canonical" href="https://urologoadrianfernandez.com/sobre-mi" />
+            </Helmet>
             <Header />
             {renderCredentialsSection()}
             {renderTrainingSection()}
